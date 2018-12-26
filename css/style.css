@@ -9,5 +9,7 @@ body {
 }
 
 footer {
-    background-image: url(../img/bg-signup.jpg);
+    background-image: url(../img/bg-signup.jpg),linear-gradient(black, grey) ;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
