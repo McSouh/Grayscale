@@ -8,10 +8,6 @@ body {
     background-size: cover;
 }
 
-#description img {
-    max-width: 100%;
-}
-
 footer {
     background-image: url(../img/bg-signup.jpg);
 }
