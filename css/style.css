@@ -8,6 +8,13 @@ body {
     background-size: cover;
 }
 
+<<<<<<< HEAD
+=======
+#description img {
+    max-width: 100%;
+}
+
+>>>>>>> 3216146fa10e807d38791fb5638571d3b72be349
 footer {
     background-image: url(../img/bg-signup.jpg);
 }
