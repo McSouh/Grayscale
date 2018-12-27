@@ -17,9 +17,9 @@
     <!-- HEADER / NAV -->
 
     <header>
-        <nav class="bg-light py-2 fixed-top">
+        <nav class="bg-light fixed-top my-0">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
                     <a class="navbar-brand mr-auto font-weight-bold" href="#">Start Bootstrap <span class="sr-only">(current)</span></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +29,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link mx-3 text-success" href="#">About</a>
+                                <a id="about" class="nav-link mx-3 py-3 text-dark" href="#description">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3 text-success" href="#">Projects</a>
+                                <a id="projects" class="nav-link mx-3 py-3 text-dark" href="#example">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3 text-success" href="#">Contact</a>
+                                <a id="contact" class="nav-link mx-3 py-3 text-dark" href="#footer">Contact</a>
                             </li>
                         </ul>
 
@@ -51,19 +51,21 @@
         <h1 class="display-1">GRAYSCALE</h1>
         <p class="h5">A free, responsive, one page Bootstrap theme <br>
             created by Start Bootstrap.</p>
-        <button type="button" class="btn btn-success mx-auto py-3 px-4 mt-3 shadow">GET STARTED</button>
+        <a href="#description">
+                <button type="button" class="btn btn-success mx-auto py-3 px-4 mt-3 shadow">GET STARTED</button>
+        </a>
     </section>
 
     <!-- DESCRIPTION -->
 
-    <section id="description" class="text-center d-flex flex-column justify-content-center text-light bg-dark">
+    <section id="description" class="text-center text-light bg-dark pt-5">
         <div class="container pt-5">
             <h1 class="pt-5">Built with Bootstrap 4</h1>
             <p class="pt-3 pb-5 text-secondary">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can
                 be yours right now, <br>
                 simply download the template on the <a href="" class="text-success no-deco">preview page</a>. The theme is open source, and you <br>
                 can use it for any purpose, personal or commercial.</p>
-            <img class="mw-100" src="./img/ipad.png" alt="">
+            <img class="mw-100" id="ipad" src="./img/ipad.png" alt="">
         </div>
     </section>
 
@@ -107,7 +109,7 @@
 
     <!-- FOOTER -->
 
-    <footer class="py-5">
+    <footer class="py-5" id="footer">
         <div class="container text-center mt-5">
             <h2 class="pt-5 text-light"><i class="far fa-paper-plane"></i> <br>
                 Subscribe to receive updates!</h2>
@@ -176,6 +178,41 @@
                     </div>
         </div>
     </footer>
+
+
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if (document.documentElement.scrollTop > 400) {
+            document.getElementById("ipad").classList.add("slideUp");
+        } else {
+            document.getElementById("ipad").classList.remove("slideUp");
+        };
+        if (document.documentElement.scrollTop > 400 && document.documentElement.scrollTop < 1400) {
+            document.getElementById("about").classList.add("bord-nav");
+            document.getElementById("about").classList.remove("nobord-nav");
+        } else {
+            document.getElementById("about").classList.add("nobord-nav");
+            document.getElementById("about").classList.remove("bord-nav");
+        };
+        if (document.documentElement.scrollTop >= 1400 && document.documentElement.scrollTop < 3000) {
+            document.getElementById("projects").classList.add("bord-nav");
+            document.getElementById("projects").classList.remove("nobord-nav");
+        } else {
+            document.getElementById("projects").classList.add("nobord-nav");
+            document.getElementById("projects").classList.remove("bord-nav");
+        };
+        if (document.documentElement.scrollTop > 3000) {
+            document.getElementById("contact").classList.add("bord-nav");
+            document.getElementById("contact").classList.remove("nobord-nav");
+        } else {
+            document.getElementById("contact").classList.add("nobord-nav");
+            document.getElementById("contact").classList.remove("bord-nav");
+        };
+
+    };
+    </script>
 
 
 </body>

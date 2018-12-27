@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Varela Round', sans-serif;
     letter-spacing: .1rem;
+    
 }
 
 #banner {
@@ -16,7 +21,18 @@ body {
 }
 
 #description {
+    position: relative;
+    overflow: hidden;
     background: linear-gradient(black, grey);
+    height: 100vh;
+}
+
+#ipad {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 0;
+    visibility: hidden;
 }
 
 footer {
@@ -48,3 +64,34 @@ footer {
 .text-turquoise {
     color: #64a19d !important;
 }
+
+.bord-nav {
+    border-bottom: solid 5px #64a19d;
+    color: #64a19d !important;
+    margin-bottom: 0px;
+}
+
+.nobord-nav {
+    padding-bottom: 21px !important;
+}
+
+
+
+
+
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 2s;
+    visibility: visible !important;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
