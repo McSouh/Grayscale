@@ -1,15 +1,50 @@
 body {
     font-family: 'Varela Round', sans-serif;
+    letter-spacing: .1rem;
 }
 
 #banner {
-    background-image: url("../img/bg-masthead.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgb(0, 0, 0)), url("../img/bg-masthead.jpg");
     height: 100vh;
     background-size: cover;
 }
 
+#banner h1 {
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.26));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#description {
+    background: linear-gradient(black, grey);
+}
+
 footer {
-    background-image: url(../img/bg-signup.jpg),linear-gradient(black, grey) ;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgb(0, 0, 0)), url("../img/bg-signup.jpg");
+    background-size: cover;
+}
+
+.border-5 {
+    border-left: 10px solid #64a19d !important;
+}
+
+.l-ico {
+    width: 45px;
+    height: 45px;
+}
+
+.no-deco:hover {
+    text-decoration-line: none;
+}
+
+.ho-light:hover {
+    color: white;
+}
+
+.bg-turquoise {
+    background-color: #64a19d !important;
+}
+
+.text-turquoise {
+    color: #64a19d !important;
 }

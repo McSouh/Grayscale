@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -29,13 +29,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#">About</a>
+                                <a class="nav-link mx-3 text-success" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#">Projects</a>
+                                <a class="nav-link mx-3 text-success" href="#">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#">Contact</a>
+                                <a class="nav-link mx-3 text-success" href="#">Contact</a>
                             </li>
                         </ul>
 
@@ -51,7 +51,7 @@
         <h1 class="display-1">GRAYSCALE</h1>
         <p class="h5">A free, responsive, one page Bootstrap theme <br>
             created by Start Bootstrap.</p>
-        <button type="button" class="btn btn-success mx-auto py-3 px-4 mt-3">GET STARTED</button>
+        <button type="button" class="btn btn-success mx-auto py-3 px-4 mt-3 shadow">GET STARTED</button>
     </section>
 
     <!-- DESCRIPTION -->
@@ -61,7 +61,7 @@
             <h1 class="pt-5">Built with Bootstrap 4</h1>
             <p class="pt-3 pb-5 text-secondary">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can
                 be yours right now, <br>
-                simply download the template on the <a href="" class="text-success">preview page</a>. The theme is open source, and you <br>
+                simply download the template on the <a href="" class="text-success no-deco">preview page</a>. The theme is open source, and you <br>
                 can use it for any purpose, personal or commercial.</p>
             <img class="mw-100" src="./img/ipad.png" alt="">
         </div>
@@ -71,18 +71,20 @@
 
     <section id="example" class="bg-light">
         <div class="container py-5">
-            <div class="row my-3">
-                <div class="col-8 px-0"><img class="mw-100" src="./img/bg-masthead.jpg" alt=""></div>
-                <div class="col-4 d-flex flex-column justify-content-center pl-5">
-                    <h3>Shoreline</h3>
-                    <p class="text-secondary">Grayscale is open source and MIT licensed. This means you can use it for
-                        any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <div class="row my-3 no-gutters">
+                <div class="col-8"><img class="img-fluid" src="./img/bg-masthead.jpg" alt=""></div>
+                <div class="col-4 d-flex flex-column justify-content-center pl-0">
+                    <div class="border-left border-success border-5 pl-5">
+                            <h3>Shoreline</h3>
+                            <p class="text-secondary">Grayscale is open source and MIT licensed. This means you can use it for
+                                any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="row my-5">
-                <div class="col-6 px-0"><img class="mw-100" src="./img/demo-image-01.jpg" alt=""></div>
-                <div class="col-6 px-0 bg-dark d-flex flex-column justify-content-center">
+            <div class="row my-5 no-gutters">
+                <div class="col-6"><img class="mw-100" src="./img/demo-image-01.jpg" alt=""></div>
+                <div class="col-6 bg-dark d-flex flex-column justify-content-center">
                     <div class="container w-75 ">
                         <h3 class="text-light">Misty</h3>
                         <p class="text-secondary">An example of where you can put an image of a project, or anything
@@ -90,7 +92,7 @@
                             <hr class="my-4 bg-success w-25 ml-0 py-1">
                     </div>
                 </div>
-                <div class="col-6 px-0 bg-dark d-flex flex-column justify-content-center">
+                <div class="col-6 bg-dark d-flex flex-column justify-content-center">
                     <div class="container w-75 text-right">
                         <h3 class="text-light">Mountains</h3>
                         <p class="text-secondary">Another example of a project with its respective description. These
@@ -113,63 +115,63 @@
                     <div class="form-row align-items-center w-50 mx-auto my-5">
                       <div class="col">
                         <div class="input-group mb-2">
-                          <input type="text" class="form-control py-4" id="inlineFormInputGroup" placeholder="ENTER EMAIL ADDRESS...">
+                          <input type="text" class="form-control py-4 shadow" id="inlineFormInputGroup" placeholder="ENTER EMAIL ADDRESS...">
                         </div>
                       </div>
                       <div class="col-auto">
-                        <button type="submit" class="btn btn-success mb-2 py-2">Subscribe</button>
+                        <button type="submit" class="btn btn-success mb-2 py-2 shadow">Subscribe</button>
                       </div>
                     </div>
                   </form>
                   <div class="row text-center mx-auto py-5 my-5">
                       <div class="col-4">
-                        <div class="card-body mx-1 py-5 card bg-light text-dark rounded">
-                                <h4 class="mx-5">
+                        <div class="card-body mx-1 py-5 card bg-light text-dark rounded shadow">
+                                <h6 class="mx-5">
                                         <i class="fas fa-map-marked-alt mb-2 text-success"></i> <br>
-                                         ADDRESS</h4>
+                                         ADDRESS</h6>
                                 <hr class="my-4 bg-success w-25 mx-auto py-1">
                                 <p>4923 Market Street, Orlando FL</p>
                         </div>
                       </div>
                       <div class="col-4">
-                        <div class="card-body mx-1 py-5 card bg-light text-dark rounded">
-                                <h4 class="mx-5">
+                        <div class="card-body mx-1 py-5 card bg-light text-dark rounded shadow">
+                                <h6 class="mx-5">
                                         <i class="fas fa-envelope mb-2 text-success"></i> <br>
-                                         EMAIL</h4>
+                                         EMAIL</h6>
                                 <hr class="my-4 bg-success w-25 mx-auto py-1">
                                 <p>hello@yourdomain.com</p>
                         </div>
                       </div>
                       <div class="col-4">
-                        <div class="card-body mx-1 py-5 card bg-light text-dark rounded">
-                                <h4 class="mx-5">
+                        <div class="card-body mx-1 py-5 card bg-light text-dark rounded shadow">
+                                <h6 class="mx-5">
                                         <i class="fas fa-mobile-alt mb-2 text-success"></i> <br>
-                                         PHONE</h4>
+                                         PHONE</h6>
                                 <hr class="my-4 bg-success w-25 mx-auto py-1">
                                 <p>+1 (555) 902-8832</p>
                         </div>
                       </div>
                       <div class="col-12 w-100 mb-5"></div>
                       <div class="mx-auto my-5 d-flex flex-row">
-                            <a href="" class="">
-                                    <div class="rounded-circle bg-secondary text-light px-4 py-3 mx-2">
-                                            <i class="fab fa-twitter"></i>
+                            <a href="" class="no-deco ho-light">
+                                    <div class="rounded-circle bg-dark text-secondary l-ico d-flex justify-content-center flex-column mx-2">
+                                            <i class="fab fa-twitter no-deco ho-light"></i>
                                     </div>
                               </a>
-                          <a href="" class="">
-                                <div class="rounded-circle bg-secondary text-light px-4 py-3 mx-2">
-                                        <i class="fab fa-facebook-f"></i>
+                          <a href="" class="no-deco ho-light">
+                                <div class="rounded-circle bg-dark text-secondary l-ico d-flex justify-content-center flex-column mx-2">
+                                        <i class="fab fa-facebook-f no-deco ho-light"></i>
                                 </div>
                           </a>
-                          <a href="" class="">
-                                <div class="rounded-circle bg-secondary text-light px-4 py-3 mx-2">
-                                        <i class="fab fa-github"></i>
+                          <a href="" class="no-deco ho-light">
+                                <div class="rounded-circle bg-dark text-secondary l-ico d-flex justify-content-center flex-column mx-2">
+                                        <i class="fab fa-github no-deco ho-light"></i>
                                 </div>
                           </a>
                           
                       </div>
                       <div class="col-12 w-100"></div>
-                      <p class="text-light text-center w-100 mt-5">Copyright © Your website 2018</p>
+                      <p class="text-secondary text-center w-100 mt-5">Copyright © Your website 2018</p>
 
                     </div>
         </div>
